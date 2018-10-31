@@ -16,7 +16,11 @@ $proyeccionsocial = $stmt->fetchAll();
      <h1>Si deseas ayudar a la humanidad estás en el lugar indicado</h1>
      
      <h2>Proyecciones Sociales:</h2>
-    
+     <?php foreach as ($proyeccionsocial as $ps){?>
+        <div>
+            <p><?php echo $ps[""]?></p>
+        </div>
+     <?php }?>
 
 </body>
 </html>
