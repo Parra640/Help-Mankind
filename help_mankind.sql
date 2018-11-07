@@ -78,7 +78,7 @@ ALTER TABLE `ong`
 ALTER TABLE `proyeccion_social`
   ADD PRIMARY KEY (`codigo`),
   ADD KEY `organizacion` (`organizacion`),
-  ADD KEY `organizacion_2` (`organizacion`);
+  
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
