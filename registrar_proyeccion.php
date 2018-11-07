@@ -10,16 +10,19 @@
 <body>
     <form action="procesar_proyeccion.php" method="post">
         <div>
-            Lugar:<input type="text" name="lugar">
+            Organización: <input type="hidden" name="organización">
         </div>
         <div>
-            Fecha: <input type="dater" name="fecha">
+            Lugar: <input type="text" name="lugar">
+        </div>
+        <div>
+            Fecha: <input type="date" name="fecha">
         </div>
         <div>
             Objetivo: <input type="text" name="objetivo">
         </div>
         <div>
-            Descripcion: <textarea name="descripcion" cols="30" rows="10"></textarea>
+            Descripción: <textarea name="descripcion" cols="30" rows="10"></textarea>
         </div>
         
         <button type="submit">Publicar</button>
