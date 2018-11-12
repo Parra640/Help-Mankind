@@ -7,9 +7,14 @@
     <title>Inicio de sesión</title>
 </head>
 <body>
+    <h1>Help Mankind</h1>
+
+    <?php if isset($_GET["error"]) { ?>
+        <p>Datos inválidos</p>
+    <?php } ?>
     <form action="login_procesar.php" method="post">
         <div>
-            Usuario: <input type="text" name="username">
+            Usuario: <input type="email" name="username">
         </div>
 	    <div>
             Contraseña: <input type="password" name="password"><br>
