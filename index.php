@@ -1,6 +1,6 @@
 <?php
 $db = new PDO('mysql:host=localhost;dbname=helpmankind;charset=utf8','root','');
-$stmt = $db->query("SELECT * FROM proyeccion_social ORDER BY codigo");
+$stmt = $db->query("SELECT * FROM proyeccion social ORDER BY codigo");
 $proyeccionsocial = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
@@ -12,10 +12,7 @@ $proyeccionsocial = $stmt->fetchAll();
     <title>Página principal</title>
 </head>
 <body>
-     <h1>Bienvenido a Help Mankind</h1>
-     <h1>Si deseas ayudar a la humanidad estás en el lugar indicado</h1>
-     <a href="registrar_usuario.php">Para usar este sitio una cuenta es requerida, si no tiene una haga clic aqui</a>
-     <a href="login.php">Si ya tiene una cuenta, entre aqui</a>
+     <?php include 'menu.php'?>
      <h2>Proyecciones Sociales:</h2>
      <?php foreach as ($proyeccionsocial as $ps){?>            
             Organización: <h1><?php echo $ps["$og"] ?></h1>
@@ -24,9 +21,5 @@ $proyeccionsocial = $stmt->fetchAll();
             Objetivo: <p><?php echo $ps["$ob"] ?></p>
             Descripción: <p><?php echo $ps["$dc"] ?></p>
      <?php } ?>
-    <a href="registro_voluntario.php">Quiero unirme a esta obra social</a>   
-     <?php if (isset($sessionstart())) { ?>
-        <a href="registrar_proyeccion.php">Registre su proyección</a>
-     <?php } ?>   
 </body>
 </html>

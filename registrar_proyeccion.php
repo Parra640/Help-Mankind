@@ -8,7 +8,8 @@
 </head>
 <body>
 <body>
-    <form action="procesar_proyeccion.php" method="post">
+<?php include 'menu.php'?>    
+<form action="procesar_proyeccion.php" method="post">
         <div>
             Organización: <input type="hidden" name="organización">
         </div>

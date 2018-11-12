@@ -7,6 +7,7 @@
     <title>Registro de ONG</title>
 </head>
 <body>
+<?php include 'menu.php'?>   
     <form action="procesar_usuario.php" method="post">
         <div>
             Nombre de ONG:<input type="text" name="nombre">

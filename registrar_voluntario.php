@@ -7,6 +7,7 @@
     <title>Me registro como voluntario</title>
 </head>
 <body>
+    <?php include 'menu.php'?>
     <form action="" method="post">
         <div>
             Nombre: <input type="text" name="nombre">
