@@ -14,7 +14,7 @@ $proyeccionsocial = $stmt->fetchAll();
 <body>
      <?php include 'menu.php'?>
      <h2>Proyecciones Sociales:</h2>
-     <?php foreach as ($proyeccionsocial as $ps){?>            
+     <?php foreach ($proyeccionsocial as $ps) { ?>            
             Organización: <h1><?php echo $ps["$og"] ?></h1>
             Lugar: <p><?php echo $ps["$lu"] ?></p>
             Fecha: <p><?php echo $ps["$fc"] ?></p>
